@@ -1,0 +1,66 @@
+/************************************************ 
+* Developed by: Arjun Dhakal
+* Date: 2023-04-07
+*************************************************/
+/* ================================= Variables  */
+:root {
+  /*  default dark mode colors */
+  --color-heavy: #14274e;
+  --color-medium: #394867;
+  --color-light: #9ba4b4;
+  --color-faint: #f1f6f9;
+  --color-black: #1b262c;
+  --color-white: #ffffff;
+
+  /*  font familys */
+  --font1: "Montserrat", sans-serif;
+  --font2: "Roboto", sans-serif;
+}
+
+/* ================================= typography and color */
+/* default margin/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: var(--color-medium);
+  font-family: var(--font1);
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.second-wrapper {
+  width: min(95%, 1400px);
+}
+/* ================================= Title and Navigation bar */
+.navbar {
+  min-height: 4rem;
+}
+.bgHeavy {
+  background-color: var(--color-heavy);
+}
+.bgHeavy a {
+  color: var(--color-white);
+}
+
+.navbar-toggler-icon {
+  color: #f1f6f9;
+}
+
+.nav-item span {
+  font-size: smaller;
+}
