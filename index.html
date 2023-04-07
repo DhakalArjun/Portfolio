@@ -31,37 +31,63 @@
   </head>
   <body>
     <!-- ---------------------------------------------------------------------- navbar -->
-    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-dark bgHeavy">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <header>
+      <nav class="bgHeavy navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid my-navbar-header">
+          <a class="navbar-brand navbarLogoText" href="#">AD</a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler navbar-dark"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <!-- me-auto mb-2 mb-lg-0 -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">
+                  <div class="d-flex flex-column text-center">
+                    <i class="fa-solid fa-house navBarIcon"></i>
+                    <span>Home</span>
+                  </div>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" aria-current="page" href="#">
+                  <div class="d-flex flex-column text-center">
+                    <i class="fa-solid fa-user navBarIcon"></i>
+                    <span>About</span>
+                  </div>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
+                <a class="nav-link" aria-current="page" href="#">
+                  <div class="d-flex flex-column text-center">
+                    <i class="fa-solid fa-folder navBarIcon"></i>
+                    <span>Resume</span>
+                  </div>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" aria-current="page" href="#">
+                  <div class="d-flex flex-column text-center">
+                    <i class="fa-solid fa-briefcase navBarIcon"></i>
+                    <span>Portfolio</span>
+                  </div>
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" aria-current="page" href="#">
+                  <div class="d-flex flex-column text-center">
+                    <i class="fa-solid fa-envelope navBarIcon"></i>
+                    <span>Contact</span>
+                  </div>
+                </a>
               </li>
             </ul>
           </div>
@@ -69,11 +95,61 @@
       </nav>
     </header>
     <!-- ---------------------------------------------------------------------- home -->
-    <section class="section home"></section>
+    <section class="section home container-fluid">
+      <div class="videoContainer">
+        <video autoplay loop muted videoFile>
+          <source src="heroMultimedia.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="col-sm-8 col-md-4 titleText">
+        <h3>ARJUN DHAKAL</h3>
+        <h4>I'm a Web-Developer</h4>
+      </div>
+    </section>
     <!-- ---------------------------------------------------------------------- About -->
-    <section class="section about"></section>
+    <section class="section aboutMe container-fluid">
+      <div class="container d-flex justify-content-between">
+        <div class="col-sm-12 col-md-4 myImageWrapper">
+          <img class="myImage" src="MyPic.jpg" alt="My Image" />
+        </div>
+        <div class="col-sm-12 col-md-6 my-text-wrapper">
+          <h1>About Me</h1>
+          <p class="my-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            eveniet eum, ipsa architecto rerum reprehenderit autem eaque eius
+            ipsam, ut in. Atque quae ipsam inventore assumenda pariatur
+            necessitatibus saepe qui sit dolorem. Exercitationem repudiandae
+            odit veniam.
+          </p>
+          <p class="my-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+            eveniet eum, ipsa architecto rerum reprehenderit autem eaque eius
+            ipsam, ut in. Atque quae ipsam inventore assumenda pariatur
+            necessitatibus saepe qui sit dolorem. Exercitationem repudiandae
+            odit veniam.
+          </p>
+          <a href="" class="btnDownload btn btn-info my-3"
+            >Download Resume <i class="fa-solid fa-circle-down"></i
+          ></a>
+        </div>
+      </div>
+    </section>
     <!-- ---------------------------------------------------------------------- Resume -->
-    <section class="section resume"></section>
+    <section class="section resume container-fluid">
+      <div class="container d-flex justify-content-between">
+        <div class="controlBtns">
+          <h1 class="my-3">Resume</h1>
+          <ul>
+            <li>Skill Set</li>
+            <li>Education</li>
+            <li>Experience</li>
+          </ul>
+        </div>
+        <article class="Skill resumeContents">Skill Set</article>
+        <article class="Education resumeContents">Eduacation</article>
+        <article class="Experience resumeContents">Experience</article>
+      </div>
+    </section>
     <!-- ---------------------------------------------------------------------- portfolio -->
     <section class="section portfolio"></section>
     <!-- ---------------------------------------------------------------------- contact -->

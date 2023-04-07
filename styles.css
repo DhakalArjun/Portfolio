@@ -6,6 +6,7 @@
 :root {
   /*  default dark mode colors */
   --color-heavy: #14274e;
+  --color-heavy-trans: #14274e8a;
   --color-medium: #394867;
   --color-light: #9ba4b4;
   --color-faint: #f1f6f9;
@@ -27,7 +28,7 @@
 }
 
 body {
-  background-color: var(--color-medium);
+  background-color: var(--color-light);
   font-family: var(--font1);
   line-height: 1.5;
 }
@@ -47,20 +48,68 @@ h3 {
   width: min(95%, 1400px);
 }
 /* ================================= Title and Navigation bar */
-.navbar {
-  min-height: 4rem;
+.navbarLogoText {
+  font-size: medium;
+  margin-left: 2rem;
+}
+.navBarIcon,
+.nav-item span {
+  font-size: smaller;
 }
 .bgHeavy {
   background-color: var(--color-heavy);
+  padding: 0 2rem 3px 0;
 }
 .bgHeavy a {
   color: var(--color-white);
 }
-
+.navbar-toggler {
+  margin: 5px;
+  border: none;
+}
 .navbar-toggler-icon {
-  color: #f1f6f9;
+  filter: brightness(200%);
 }
 
-.nav-item span {
-  font-size: smaller;
+.videoContainer {
+  position: relative;
+  top: -15rem;
+  left: -1rem;
+  height: 80vh;
+  z-index: -1;
+}
+
+.titleText {
+  position: relative;
+  top: -35vh;
+  margin: auto;
+  text-align: center;
+  background-color: var(--color-heavy-trans);
+  color: var(--color-faint);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.titleText h3 {
+  font-size: 3vw;
+}
+.titleText h4 {
+  font-size: 1.5vw;
+}
+
+/* about */
+.aboutMe {
+  background-color: var(--color-heavy);
+  color: var(--color-faint);
+  padding: 2rem 0;
+}
+
+.myImageWrapper {
+  background-color: var(--color-faint);
+  border-radius: 14px;
+}
+.myImage {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  filter: grayscale(40%);
 }
