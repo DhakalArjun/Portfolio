@@ -113,3 +113,36 @@ h3 {
   border-radius: 10px;
   filter: grayscale(40%);
 }
+
+/* protfolio */
+.portfolio {
+  background-color: var(--color-heavy);
+  color: var(--color-faint);
+  padding: 2rem 0;
+}
+.projectImage {
+  width: 90%;
+  margin: 1rem;
+  border-radius: 10px;
+  border: solid 1px var(--color-light);
+}
+.projectTopic {
+  font-size: medium;
+  padding: 0.5rem 1rem;
+}
+.projectDesc {
+  font-size: small;
+  padding: 0 1rem;
+}
+.liveLink {
+  position: relative;
+}
+/* contact  */
+.contact {
+  padding: 2rem 0;
+}
+/* footer */
+.footer {
+  background-color: var(--color-heavy);
+  color: var(--color-faint);
+}
