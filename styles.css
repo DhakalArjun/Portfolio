@@ -51,7 +51,6 @@ h3 {
 /* ================================= Title and Navigation bar */
 .navbarLogoText {
   font-size: medium;
-  margin-left: 2rem;
 }
 .navBarIcon,
 .nav-item span {
@@ -59,8 +58,9 @@ h3 {
 }
 .bgHeavy {
   background-color: var(--color-heavy);
-  padding: 0 2rem 3px 0;
 }
+
+/* padding: 0 2rem 3px 0; */
 .bgHeavy a {
   color: var(--color-white);
 }
@@ -102,13 +102,6 @@ h3 {
   padding: 1rem;
 }
 
-.titleText h3 {
-  font-size: 3vw;
-}
-.titleText h4 {
-  font-size: 1.5vw;
-}
-
 /* about */
 .aboutMe {
   background-color: var(--color-heavy);
@@ -116,11 +109,9 @@ h3 {
   padding: 2rem 0;
 }
 
-.myImageWrapper {
+.myImage {
   background-color: var(--color-faint);
   border-radius: 14px;
-}
-.myImage {
   padding: 10px;
   width: 100%;
   border-radius: 10px;
@@ -136,14 +127,20 @@ h3 {
 }
 
 .skillSubTitle {
-  background-color: var(--color-faint);
   padding: 0.25rem;
-  width: 35%;
-  border-radius: 5px;
-  color: var(--color-heavy);
+  width: 50%;
   margin: 0 auto;
   margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-faint);
 }
+.skillTopics p {
+  margin: 0.5rem auto;
+}
+
+.academicTitle p {
+  margin: 0.5rem auto;
+}
+
 .collegeLogo {
   background-color: var(--color-faint);
   border-radius: 5px;
@@ -155,14 +152,6 @@ h3 {
   border-radius: 5px;
   width: 20%;
 }
-
-/* .articleTitle {
-  background-color: var(--color-heavy-trans-dark);
-  color: var(--color-white);
-  text-decoration: underline;
-  padding: 1rem;
-  margin: 2rem auto 0;
-} */
 
 .textBGonVideoDark {
   background-color: var(--color-heavy-trans-dark);
@@ -205,6 +194,9 @@ h3 {
 .contact {
   padding: 2rem 0;
 }
+.contactPara {
+  margin-bottom: 3rem;
+}
 .contactIcon {
   font-size: 2rem;
   padding-right: 1.5rem;
@@ -220,4 +212,32 @@ h3 {
 .footer {
   background-color: var(--color-heavy);
   color: var(--color-faint);
+  font-size: smaller;
+}
+
+@media screen and (max-width: 768px) {
+  .skillSubWrapper {
+    margin-bottom: 2.5rem;
+  }
+  .skillSubTitle {
+    width: 50%;
+  }
+  .academicTitle {
+    margin-bottom: 3rem;
+  }
+  .experienceTitle {
+    margin-bottom: 3rem;
+  }
+  .organizationLogo {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .skillSubTitle {
+    width: 80%;
+  }
+  .organizationLogo {
+    width: 30%;
+  }
 }
