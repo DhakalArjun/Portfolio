@@ -103,7 +103,7 @@ h3 {
 }
 
 /* about */
-.aboutMe {
+#aboutMe {
   background-color: var(--color-heavy);
   color: var(--color-faint);
   padding: 2rem 0;
@@ -161,7 +161,7 @@ h3 {
 
 /* protfolio */
 
-.portfolio {
+#portfolio {
   background-color: var(--color-heavy);
   color: var(--color-faint);
   padding: 2rem 0;
@@ -184,15 +184,16 @@ h3 {
   position: relative;
 }
 /* contact  */
+#contact {
+  padding: 2rem 0;
+}
+
 .contactContent {
   background-color: var(--color-heavy-trans-dark);
   color: var(--color-white);
   margin: 2rem auto 0;
   border-radius: 10px;
   padding: 2rem;
-}
-.contact {
-  padding: 2rem 0;
 }
 .contactPara {
   margin-bottom: 3rem;

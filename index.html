@@ -50,7 +50,7 @@
             <ul class="navbar-nav ms-auto">
               <!-- me-auto mb-2 mb-lg-0 -->
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link active" aria-current="page" href="#home">
                   <div class="d-flex flex-column text-center">
                     <i class="fa-solid fa-house navBarIcon"></i>
                     <span>Home</span>
@@ -58,7 +58,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="#aboutMe">
                   <div class="d-flex flex-column text-center">
                     <i class="fa-solid fa-user navBarIcon"></i>
                     <span>About</span>
@@ -66,7 +66,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="#resume">
                   <div class="d-flex flex-column text-center">
                     <i class="fa-solid fa-folder navBarIcon"></i>
                     <span>Resume</span>
@@ -74,7 +74,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="#portfolio">
                   <div class="d-flex flex-column text-center">
                     <i class="fa-solid fa-briefcase navBarIcon"></i>
                     <span>Portfolio</span>
@@ -82,7 +82,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
+                <a class="nav-link" aria-current="page" href="#contact">
                   <div class="d-flex flex-column text-center">
                     <i class="fa-solid fa-envelope navBarIcon"></i>
                     <span>Contact</span>
@@ -95,7 +95,7 @@
       </nav>     
     </header>
     <!-- ---------------------------------------------------------------------- home -->
-    <section class="section home container-fluid">
+    <section class="container-fluid" id="home">
       <div class="videoContainer">
         <video autoplay loop muted id="videoFile">
           <source  src="Images/heroMultimedia.mp4" type="video/mp4" />
@@ -107,11 +107,11 @@
       </div>
     </section>
     <!-- ---------------------------------------------------------------------- About -->
-    <section class="aboutMe container-fluid">
+    <section class="container-fluid" id="aboutMe">
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
           <div class="col-lg-3 col-md-4 my-3">
-            <img class="myImage" src="Images/MyPic.jpg" alt="My Image" />
+            <img class="myImage" src="Images/MyPic.jpg" alt="My Image"/>
           </div>
           <div class="col-md-8 my-3">
             <h1>About Me</h1>
@@ -129,15 +129,15 @@
               necessitatibus saepe qui sit dolorem. Exercitationem repudiandae
               odit veniam.
             </p>
-            <a href="" class="btnDownload btn btn-info my-3"
-              >Download Resume <i class="fa-solid fa-circle-down"></i
+            <a href="/Images/ResumeAD.pdf" class="btnDownload btn btn-info my-3"
+              download>Download Resume <i class="fa-solid fa-circle-down"></i
             ></a>
           </div>        
         </div>
       </div>
     </section>
     <!-- ---------------------------------------------------------------------- Resume -->
-    <section class="section resume container-fluid">
+    <section class="container-fluid" id="resume">
       <div class="container">               
           <article class="Skill articleContent text-center">          
             <h1 class="articleTitle">Skill Sets</h1><hr>
@@ -149,7 +149,7 @@
                   <p>CSS</p>
                   <p>Bootstrap5</p>
                   <p>JavaScript</p>
-                  <p>JQuery</p>
+                  <p>jQuery</p>
                 </div>
               </div>  
               <div class="col-md-4 text-center  skillSubWrapper">
@@ -179,19 +179,19 @@
                 <h5>Stack Developer</h5>
                 <p>2022-2023</p>
                 <p>John Abbott College</p>
-                <a href="#"><img src="Images/JohnAbbott_logo.png" alt="JohnAbbott Logo" class="collegeLogo"></a>               
+                <a href="https://continuingeducation.johnabbott.qc.ca" target="_blank"><img src="Images/JohnAbbott_logo.png" alt="JohnAbbott Logo" class="collegeLogo"></a>               
               </div>
               <div class="col-md-4 academicTitle">
                 <h5>Master's in Physics</h5>
                 <p>2006-2008</p>
                 <p>Tribhuvan University</p>
-                <a href="#"><img src="Images/PatanCampus_logo.png" alt="Patan Campus Logo" class="collegeLogo"></a>                
+                <a href="http://www.tribhuvan-university.edu.np" target="_blank"><img src="Images/PatanCampus_logo.png" alt="Patan Campus Logo" class="collegeLogo"></a>                
               </div>
               <div class="col-md-4 academicTitle">
                 <h5>Bachelor's in Physics</h5>
                 <p>2003-2006</p> 
                 <p>Tribhuvan University</p>
-                <a href="#"><img src="Images/Trichandra_logo.png" alt="Trichandara Logo" class="collegeLogo"></a>               
+                <a href="http://www.tribhuvan-university.edu.np" target="_blank"><img src="Images/Trichandra_logo.png" alt="Trichandara Logo" class="collegeLogo"></a>               
               </div>              
             </div>                  
           </article>
@@ -202,59 +202,58 @@
                 <h5>Quality Assurance /Planning</h5>
                 <p>2018-2022</p>
                 <p>Lisi Aerospace Canada, Dorval, QC</p> 
-                <a href="#"><img src="Images/Lisi_Logo.png" alt="Lisi Aeropspace Logo" class="organizationLogo"></a>                
+                <a href="https://www.lisi-aerospace.com/en/lisi-aerospace/worldwide-presence" target="_blank"><img src="Images/Lisi_Logo.png" alt="Lisi Aeropspace Logo" class="organizationLogo"></a>                
               </div>
               <div class="experienceTitle col-md-4">
                 <h5>Metrologist /Metrology Inspector </h5>
                 <p>2010-2018</p>
                 <p>Nepal Bureau of Standards & Metrology</p>
-                <a href="#"><img src="Images/NBSM_Logo.png" alt="NBSM Logo" class="organizationLogo"></a>                 
+                <a href="https://nbsm.gov.np" target="_blank"><img src="Images/NBSM_Logo.png" alt="NBSM Logo" class="organizationLogo"></a>                 
               </div>
               <div class="experienceTitle col-md-4">
                 <h5>Physics Lecturer </h5>
                 <p>2008-2010</p>
                 <p>DAV College, Lalitpur, Nepal</p> 
-                <a href="#"><img src="Images/DAV_Logo.png" alt="DAV Logo" class="organizationLogo"></a>               
+                <a href="https://davcollege.edu.np/" target="_blank"><img src="Images/DAV_Logo.png" alt="DAV Logo" class="organizationLogo"></a>               
               </div>
             </div>             
-            </article>
-          
+            </article>          
         </div>
     </div>
   </div>
     </section>
     <!-- ---------------------------------------------------------------------- portfolio -->
-    <section class="section portfolio container-fluid my-3">
+    <section class="container-fluid my-3" id="portfolio">
       <div class="container d-flex">
         <div class="row portfolioProjects text-center">
           <h1 class="articleTitle">Portfolio Projects</h1><hr>
           <div class="col-md-4  projectImageWrapper">
             <img class="projectImage" src="Images/Restaurant_Project.JPG" alt="">
-            <a class="liveLink btn btn-outline-info btn-sm" href="#">Visit Site <i class="fa-solid fa-eye"></i></a>
+            <a class="liveLink btn btn-outline-info btn-sm" href="https://dhakalarjun.github.io/jab23-fsd07-wd-iproject-restaurant-ws" target="_blank">Visit Site <i class="fa-solid fa-eye"></i></a>
             <h4 class="projectTopic">WebDesign Project</h4>
             <p class="projectDesc">Individual Project<br> Responsive static website of a restaurant <br> using HTML, CSS, Bootstrap5</p>
-            <a href="#" class="btn btn-info m-2">Source Code</a>
+            <a href="https://github.com/DhakalArjun/jab23-fsd07-wd-iproject-restaurant-ws" target="_blank" class="btn btn-info m-2">Source Code</a>
           </div>
           <div class="col-md-4 projectImageWrapper">
             <img class="projectImage" src="Images/TetrisGame_Project.JPG" alt="">
-            <a class="liveLink btn btn-outline-info btn-sm" href="#">Visit Site <i class="fa-solid fa-eye"></i></a>
+            <a class="liveLink btn btn-outline-info btn-sm" href="https://dhakalarjun.github.io/jab23-fsd07-ui-gproject-tetris-game" target="_blank">Visit Site <i class="fa-solid fa-eye"></i></a>
             <h4 class="projectTopic">User Interface Project</h4>
             <p class="projectDesc">Group Project <br> Responsive Tetris game <br> using HTML, CSS, Bootstrap5, JavaScript</p>
-            <a href="#" class="btn btn-info m-2">Source Code</a>
+            <a href="https://github.com/DhakalArjun/jab23-fsd07-ui-gproject-tetris-game" target="_blank" class="btn btn-info m-2">Source Code</a>
           </div> 
           <div class=" col-md-4 projectImageWrapper">
             <img class="projectImage" src="Images/PHP_Project.JPG" alt="">
-            <a class="liveLink btn btn-outline-info btn-sm" href="#">Visit Site <i class="fa-solid fa-eye"></i></a>
+            <a class="liveLink btn btn-outline-info btn-sm" href="https://goodfoodco.fsd07.com" target="_blank">Visit Site <i class="fa-solid fa-eye"></i></a>
             <h4 class="projectTopic">Web Development I Project</h4>
             <p class="projectDesc">Group Project <br> Dynamic website of food recipe <br> using PHP slim, CSS,  Bootstrap5, AJAX, JQuery</p>
-            <a href="#" class="btn btn-info m-2">Source Code</a>
-            <a href="#" class="btn btn-info m-2">Presentation</a>
+            <a href="https://github.com/un2trei/WDproject-recipe-website" target="_blank" class="btn btn-info m-2">Source Code</a>
+            <a href="Images/PHP_Project Presentation.pdf" target="_blank" class="btn btn-info m-2">Presentation</a>
           </div>          
         </div>
       </div>
     </section>
     <!-- ---------------------------------------------------------------------- contact -->
-    <section class="section contact container-fluid">
+    <section class="container-fluid" id="contact">
       <div class="container contactContent">
         <h1 class="text-center">Contact</h1><br>
         
@@ -275,7 +274,7 @@
         </div>
          
           <div class="col-md-6 contactForm">
-            <form id="form-contact" action="msg-contact.html" method="post">
+            <form id="form-contact" action="https://formsubmit.co/arjun.nbsm@yahoo.com" method="post">
               <!-- here method should be "post" but get is used just to see the success massage*/-->
               <!-- ------------------------------------------ -->
               <div class="form-floating my-2">
@@ -326,7 +325,7 @@
                 <label for="query">Write a message</label>
               </div>
               <div class="contactButtons text-center">
-                <button type="submit" class="btn btn-info">Send Message</button>                
+                <button type="submit" class="btn btn-info">Send Message</buttonref=>                
               </div>
             </form>          
         </div>
