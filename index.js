@@ -1,5 +1,5 @@
 function sendMail() {
-  const serviceID = "service_mty9s38";
+  const serviceID = "service_b1mj6dh";
   const templateID = "template_1qggozm";
   let parameters = {
     name: document.getElementById("senderName").value,
