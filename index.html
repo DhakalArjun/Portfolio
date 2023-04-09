@@ -26,6 +26,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("vncw6LQVBBmt3d4dw");
+      })();
+    </script>
+
     <!-- style sheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -274,12 +282,14 @@
         </div>
          
           <div class="col-md-6 contactForm">
-            <form id="form-contact" action="https://formsubmit.co/arjun.nbsm@yahoo.com" method="post">
+            <!-- action="https://formsubmit.co/arjun.nbsm@yahoo.com" -->
+            <form id="form-contact"  method="POST">
               <!-- here method should be "post" but get is used just to see the success massage*/-->
               <!-- ------------------------------------------ -->
               <div class="form-floating my-2">
                 <input
                   type="text"
+                  name="name"
                   id="senderName"
                   placeholder="e.g. John Smith"                 
                   class="form-control"
@@ -291,8 +301,9 @@
               <!-- ------------------------------------------ -->
               <div class="form-floating my-2">
                 <input
-                  type="text"
+                  type="email"
                   id="email"
+                  name="email"
                   placeholder="e.g. john.Smith@mail.com"
                   class="form-control"
                   maxlength="320"
@@ -305,7 +316,7 @@
                 <input
                 type="text"
                   name="subject"
-                  id="subject"
+                  id="subject"                  
                   placeholder="Type subject ... "
                   class="form-control"
                   required
@@ -325,7 +336,7 @@
                 <label for="query">Write a message</label>
               </div>
               <div class="contactButtons text-center">
-                <button type="submit" class="btn btn-info">Send Message</buttonref=>                
+                <button type="submit" onclick="sendMail()" class="btn btn-info">Send Message</button>                
               </div>
             </form>          
         </div>
