@@ -7,6 +7,7 @@
   /*  default dark mode colors */
   --color-heavy: #14274e;
   --color-heavy-trans: #14274e8a;
+  --color-heavy-trans-dark: #14274eb6;
   --color-medium: #394867;
   --color-light: #9ba4b4;
   --color-faint: #f1f6f9;
@@ -71,12 +72,23 @@ h3 {
   filter: brightness(200%);
 }
 
+/* .navBar {
+  border-bottom: solid 1px var(--color-light);
+} */
+
 .videoContainer {
+  margin: 0;
+  padding: 0;
   position: relative;
-  top: -15rem;
-  left: -1rem;
   height: 80vh;
   z-index: -1;
+}
+#videoFile {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .titleText {
@@ -89,6 +101,7 @@ h3 {
   border-radius: 1rem;
   padding: 1rem;
 }
+
 .titleText h3 {
   font-size: 3vw;
 }
@@ -113,8 +126,52 @@ h3 {
   border-radius: 10px;
   filter: grayscale(40%);
 }
+/* Resume */
+.articleContent {
+  background-color: var(--color-heavy-trans-dark);
+  color: var(--color-white);
+  margin: 2rem auto 0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.skillSubTitle {
+  background-color: var(--color-faint);
+  padding: 0.25rem;
+  width: 35%;
+  border-radius: 5px;
+  color: var(--color-heavy);
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.collegeLogo {
+  background-color: var(--color-faint);
+  border-radius: 5px;
+  width: 40%;
+}
+
+.organizationLogo {
+  background-color: var(--color-faint);
+  border-radius: 5px;
+  width: 20%;
+}
+
+/* .articleTitle {
+  background-color: var(--color-heavy-trans-dark);
+  color: var(--color-white);
+  text-decoration: underline;
+  padding: 1rem;
+  margin: 2rem auto 0;
+} */
+
+.textBGonVideoDark {
+  background-color: var(--color-heavy-trans-dark);
+  color: var(--color-faint);
+  margin-top: 0;
+}
 
 /* protfolio */
+
 .portfolio {
   background-color: var(--color-heavy);
   color: var(--color-faint);
@@ -138,8 +195,26 @@ h3 {
   position: relative;
 }
 /* contact  */
+.contactContent {
+  background-color: var(--color-heavy-trans-dark);
+  color: var(--color-white);
+  margin: 2rem auto 0;
+  border-radius: 10px;
+  padding: 2rem;
+}
 .contact {
   padding: 2rem 0;
+}
+.contactIcon {
+  font-size: 2rem;
+  padding-right: 1.5rem;
+  color: var(--color-white);
+}
+.contactForm {
+  color: var(--color-heavy);
+}
+.contactButtons {
+  margin-top: 2rem;
 }
 /* footer */
 .footer {

@@ -32,7 +32,7 @@
   <body>
     <!-- ---------------------------------------------------------------------- navbar -->
     <header>
-      <nav class="bgHeavy navbar navbar-expand-lg fixed-top">
+      <nav class="bgHeavy navbar navbar-expand-lg fixed-top navBar">
         <div class="container-fluid my-navbar-header">
           <a class="navbar-brand navbarLogoText" href="#">AD</a>
           <button
@@ -91,14 +91,14 @@
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </div>        
+      </nav>     
     </header>
     <!-- ---------------------------------------------------------------------- home -->
     <section class="section home container-fluid">
       <div class="videoContainer">
-        <video autoplay loop muted videoFile>
-          <source src="Images/heroMultimedia.mp4" type="video/mp4" />
+        <video autoplay loop muted id="videoFile">
+          <source  src="Images/heroMultimedia.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="col-sm-8 col-md-4 titleText">
@@ -109,7 +109,7 @@
     <!-- ---------------------------------------------------------------------- About -->
     <section class="section aboutMe container-fluid">
       <div class="container d-flex justify-content-between">
-        <div class="col-sm-12 col-md-3 myImageWrapper">
+        <div class="col-sm-6 col-md-3 myImageWrapper">
           <img class="myImage" src="Images/MyPic.jpg" alt="My Image" />
         </div>
         <div class="col-sm-12 col-md-8 my-text-wrapper">
@@ -135,123 +135,119 @@
       </div>
     </section>
     <!-- ---------------------------------------------------------------------- Resume -->
-    <section class="section resume container-fluid">
-      <div class="videoContainer">
-        <video autoplay loop muted videoFile>
-          <source src="Images/heroMultimedia.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div class="container d-flex justify-content-between">
-        <div class="controlBtns col-md-3">
-          <h1 class="my-3">Resume</h1>
-          <ul class="btn-group-vertical">
-            <li><a href="#">Skill Sets</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Experience</a></li>
-          </ul>
-        </div>
-        <div class="col-md-8 col-sm-12 text-center">
-          <article class="Skill resumeContents ">          
-            <h1 class="my-3">Skill Sets</h1>
+    <section class="section resume container-fluid">      
+      <div class="container d-flex justify-content-between ">      
+        <div class="col-md-12 text-center">
+          <article class="Skill articleContent">          
+            <h1 class="articleTitle">Skill Sets</h1><hr>
             <div class="d-flex">
-            <div class="skillTitle col-md-4 text-center">
-              <h3>Front End</h3>
-              <div class="skillTopics">
-                <p>HTML5</p>
-                <p>CSS</p>
-                <p>Bootstrap5</p>
-                <p>JavaScript</p>
-                <p>JQuery</p>
+              <div class="skillTitle col-md-4 col-sm-12 text-center">
+                <h3 class="skillSubTitle">Front End</h3>                
+                <div class="skillTopics">
+                  <p>HTML5</p>
+                  <p>CSS</p>
+                  <p>Bootstrap5</p>
+                  <p>JavaScript</p>
+                  <p>JQuery</p>
+                </div>
+              </div>  
+              <div class="skillTitle col-md-4 col-sm-12 text-center">
+                <h3 class="skillSubTitle">Back End</h3>
+                <div class="skillTopics">
+                  <p>Java</p>
+                  <p>MySql/SQL Server</p>
+                  <p>Spring Boot</p>
+                  <p>PHP Twig</p>
+                </div>
               </div>
-            </div>  
-            <div class="skillTitle col-md-4 text-center">
-              <h3>BackEnd</h3>
-              <div class="skillTopics">
-                <p>Java</p>
-                <p>MySql/SQL Server</p>
-                <p>Spring Boot</p>
-                <p>PHP Twig</p>
-              </div>
-            </div>
-            <div class="skillTitle col-md-4 text-center">
-              <h3>Tools</h3>
-              <div class="skillTopics">
-                <p>GitHub/GitLab</p>
-                <p>Figma</p>
-                <p>Lucidchart</p>
-                <p>Trello</p>
+              <div class="skillTitle col-md-4 col-sm-12 text-center">
+                <h3 class="skillSubTitle">Tools</h3>
+                <div class="skillTopics">
+                    <p>GitHub/GitLab</p>
+                    <p>Figma</p>
+                    <p>Lucidchart</p>
+                    <p>Trello</p>
+                  </div>
               </div>
             </div>
           </article>
-          <article class="Education resumeContents">
-            <div class="skillTitle col-ms-12 text-center">
-              <h1>Education</h1>
-              <div class="academicTitle">
+          <article class="Education articleContent col-md-12">
+            <h1 class="articleTitle">Academic</h1><hr>
+            <div class="skillTitle text-center d-flex"> 
+              <div class="academicTitle col-md-4 col-sm-12 ">
                 <h6>Full Stack Developer</h6>
                 <p>2022-2023</p>
-                <p>John Abbott College</p>               
+                <p>John Abbott College</p>
+                <a href="#"><img src="Images/JohnAbbott_logo.png" alt="JohnAbbott Logo" class="collegeLogo"></a>               
               </div>
-              <div class="academicTitle">
+              <div class="academicTitle col-md-4 col-sm-12 ">
                 <h6>Master Degree's in Physics</h6>
                 <p>2006-2008</p>
-                <p>Tribhuvan University, Nepal</p>               
+                <p>Patan M. Campus [Tribhuvan University]</p>
+                <a href="#"><img src="Images/PatanCampus_logo.png" alt="Patan Campus Logo" class="collegeLogo"></a>                
               </div>
-              <div class="academicTitle">
+              <div class="academicTitle col-md-4 col-sm-12 ">
                 <h6>Bachelor's Degree's in Physics</h6>
                 <p>2003-2006</p> 
-                <p>Tribhuvan University, Nepal</p>             
+                <p>Trichandara M. Campus [Tribhuvan University]</p>
+                <a href="#"><img src="Images/Trichandra_logo.png" alt="Trichandara Logo" class="collegeLogo"></a>               
               </div>              
             </div>             
            </article>
-          <article class="Experience resumeContents">
-            <h1>Experience</h1>
-              <div class="experienceTitle">
+          <article class="Experience articleContent col-md-12">
+            <h1 class="articleTitle">Experience</h1><hr>
+            <div class="experienceTitle text-center d-flex"> 
+              <div class="experienceTitle col-md-4">
                 <h6>Quality Assurance/ Quality Planning</h6>
                 <p>2018-2022</p>
-                <p>Lisi Aerospace Canada, Dorval, QC</p>               
+                <p>Lisi Aerospace Canada, Dorval, QC</p> 
+                <a href="#"><img src="Images/Lisi_Logo.png" alt="Lisi Aeropspace Logo" class="organizationLogo"></a>                
               </div>
-              <div class="experienceTitle">
+              <div class="experienceTitle col-md-4 col-sm-12 ">
                 <h6>Metrologist [Metrology Inspector] </h6>
                 <p>2010-2018</p>
-                <p>Nepal Bureau of Standards & Metrology</p>               
+                <p>Nepal Bureau of Standards & Metrology</p>
+                <a href="#"><img src="Images/NBSM_Logo.png" alt="NBSM Logo" class="organizationLogo"></a>                 
               </div>
-              <div class="experienceTitle">
+              <div class="experienceTitle col-md-4 col-sm-12 ">
                 <h6>Physics Lecturer </h6>
                 <p>2008-2010</p>
-                <p>DAV College, Lalitpur, Nepal</p>               
-              </div>            
+                <p>DAV College, Lalitpur, Nepal</p> 
+                <a href="#"><img src="Images/DAV_Logo.png" alt="DAV Logo" class="organizationLogo"></a>               
+              </div>
+            </div>             
             </article>
         </div>        
       </div>
     </div>
     </section>
     <!-- ---------------------------------------------------------------------- portfolio -->
-    <section class="section portfolio container-fluid">
+    <section class="section portfolio container-fluid my-3">
       <div class="container d-flex">
         <div class="portfolioProjects col-md-4 col-sm-12 text-center">
           <div class="projectImageWrapper">
             <img class="projectImage" src="Images/Restaurant_Project.JPG" alt="">
-            <a class="liveLink btn btn-outline-danger btn-sm" href="#">Click to visit <i class="fa-solid fa-eye"></i></a>
+            <a class="liveLink btn btn-outline-info btn-sm" href="#">Visit Site <i class="fa-solid fa-eye"></i></a>
             <h4 class="projectTopic">WebDesign Project</h4>
-            <p class="projectDesc">Individual Project:<br> Responsive static website of a restaurant <br> using HTML, CSS, Bootstrap5</p>
+            <p class="projectDesc">Individual Project<br> Responsive static website of a restaurant <br> using HTML, CSS, Bootstrap5</p>
             <a href="#" class="btn btn-info m-2">Source Code</a>
           </div>          
         </div>
         <div class="portfolioProjects col-md-4 col-sm-12 text-center">
           <div class="projectImageWrapper">
             <img class="projectImage" src="Images/TetrisGame_Project.JPG" alt="">
-            <a class="liveLink btn btn-outline-danger btn-sm" href="#">Click to visit <i class="fa-solid fa-eye"></i></a>
+            <a class="liveLink btn btn-outline-info btn-sm" href="#">Visit Site <i class="fa-solid fa-eye"></i></a>
             <h4 class="projectTopic">User Interface Project</h4>
-            <p class="projectDesc">Group Project: <br> Responsive Tetris game <br> using HTML, CSS, Bootstrap5, JavaScript</p>
+            <p class="projectDesc">Group Project <br> Responsive Tetris game <br> using HTML, CSS, Bootstrap5, JavaScript</p>
             <a href="#" class="btn btn-info m-2">Source Code</a>
           </div>          
         </div>
         <div class="portfolioProjects col-md-4 col-sm-12 text-center">
           <div class="projectImageWrapper">
             <img class="projectImage" src="Images/PHP_Project.JPG" alt="">
-            <a class="liveLink btn btn-outline-danger btn-sm" href="#">Click to visit <i class="fa-solid fa-eye"></i></a>
+            <a class="liveLink btn btn-outline-info btn-sm" href="#">Visit Site <i class="fa-solid fa-eye"></i></a>
             <h4 class="projectTopic">Web Development I Project</h4>
-            <p class="projectDesc">Group Project: <br> Dynamic website of food recipe <br> using PHP slim, CSS,  Bootstrap5, AJAX, JQuery</p>
+            <p class="projectDesc">Group Project <br> Dynamic website of food recipe <br> using PHP slim, CSS,  Bootstrap5, AJAX, JQuery</p>
             <a href="#" class="btn btn-info m-2">Source Code</a>
             <a href="#" class="btn btn-info m-2">Presentation</a>
           </div>          
@@ -260,32 +256,22 @@
     </section>
     <!-- ---------------------------------------------------------------------- contact -->
     <section class="section contact container-fluid">
-      <div class="videoContainer">
-        <video autoplay loop muted videoFile repeat>
-          <source src="Images/heroMultimedia.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div class="container d-flex titleText">
-        <div class="col-md-5">          
+      <div class="container d-flex justify-content-between contactContent">
+        <div class="col-md-5 ">          
           <p class="lead">I would love to hear from you.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             At architecto dolores sint, autem optio odit voluptas facere ipsam aliquam eius. 
             Eligendi cupiditate quasi sequi laudantium assumenda adipisci vel error ratione?
           </p>
-
-          <i class="fa-solid fa-envelope contactIcon"></i><p>arjun.nbsm@yahoo.com</p>
-
-          <a href="#"><i class="fab fa-facebook contactIcon"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin contactIcon"></i></a>
+          <div class="d-flex">
+            <i class="fa-solid fa-envelope contactIcon"></i><p>arjun.nbsm@yahoo.com</p>
+          </div>
           
-
-
-
-
+          <a href="#" ><i class="fa-brands fa-square-facebook contactIcon"></i></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin contactIcon"></i></a>
         </div>
          
-          <div class="col-md-5">
+          <div class="col-md-5 contactForm">
             <form id="form-contact" action="msg-contact.html" method="post">
               <!-- here method should be "post" but get is used just to see the success massage*/-->
               <!-- ------------------------------------------ -->
@@ -333,7 +319,7 @@
                 ></textarea>
                 <label for="query">Write a message</label>
               </div>
-              <div class="contact-buttons">
+              <div class="contactButtons text-center">
                 <button type="submit" class="btn btn-info">Send Message</button>                
               </div>
             </form>          
