@@ -215,6 +215,25 @@ h3 {
   color: var(--color-faint);
   font-size: smaller;
 }
+/* success message page */
+.msgContent {
+  position: relative;
+  top: -70vh;
+
+  background-color: var(--color-heavy-trans-dark);
+  color: var(--color-white);
+  margin: 2rem auto 0;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.msgFooter {
+  background-color: var(--color-heavy);
+  color: var(--color-faint);
+  font-size: smaller;
+  position: relative;
+  top: -6vh;
+}
 
 @media screen and (max-width: 768px) {
   .skillSubWrapper {
