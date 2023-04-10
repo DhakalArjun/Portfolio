@@ -107,6 +107,7 @@ h3 {
   background-color: var(--color-heavy);
   color: var(--color-faint);
   padding: 2rem 0;
+  text-align: justify;
 }
 
 .myImage {
@@ -117,6 +118,25 @@ h3 {
   border-radius: 10px;
   filter: grayscale(40%);
 }
+.greetSt {
+  line-height: 2rem;
+  letter-spacing: 2px;
+}
+
+.aboutMeLinks {
+  display: flex;
+}
+
+.aboutLinkIcon {
+  font-size: 2rem;
+  padding: 1px 5px;
+  color: var(--color-white);
+}
+
+.aboutMeLinks a {
+  margin: 0.25rem auto;
+}
+
 /* Resume */
 .articleContent {
   background-color: var(--color-heavy-trans-dark);
@@ -160,7 +180,6 @@ h3 {
 }
 
 /* protfolio */
-
 #portfolio {
   background-color: var(--color-heavy);
   color: var(--color-faint);
@@ -195,14 +214,10 @@ h3 {
   border-radius: 10px;
   padding: 2rem;
 }
-.contactPara {
+/* .contactPara {
   margin-bottom: 3rem;
-}
-.contactIcon {
-  font-size: 2rem;
-  padding-right: 1.5rem;
-  color: var(--color-white);
-}
+} */
+
 .contactForm {
   color: var(--color-heavy);
 }
@@ -233,6 +248,12 @@ h3 {
   font-size: smaller;
   position: relative;
   top: -6vh;
+}
+
+.isALink:hover {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.075), 0 0 20px rgb(33, 185, 241);
 }
 
 @media screen and (max-width: 768px) {
